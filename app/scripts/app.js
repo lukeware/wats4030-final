@@ -31,6 +31,16 @@ angular
         controller: 'AboutCtrl',
         controllerAs: 'about'
       })
+     .when('/find-open', {
+        templateUrl: 'views/find-open.html',
+        controller: 'FindCtrl',
+        controllerAs: 'find-open'
+      })
+     .when('/create-open', {
+        templateUrl: 'views/create-open.html',
+        controller: 'CreateCtrl',
+        controllerAs: 'create-open'
+      })
       .otherwise({
         redirectTo: '/'
       });
