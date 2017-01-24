@@ -97,3 +97,11 @@ body {
   font-weight:700;
 }
 
+/* adds rounded box to all resources on find-open.html */
+.resource-box {
+    border-radius: 18px;
+    border: 2px solid;
+    padding: 20px; 
+}
+
+
