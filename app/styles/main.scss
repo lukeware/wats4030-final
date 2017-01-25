@@ -3,6 +3,11 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
 
+// navbar background color
+.navbar {
+    background: rgb(201,214,222);
+}
+
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
@@ -12,6 +17,7 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 
 body {
   padding: 0;
+  background: rgb(240,245,249); 
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -51,6 +57,7 @@ body {
 .jumbotron {
   text-align: center;
   border-bottom: 1px solid #e5e5e5;
+  background: rgb(201,214,222);
 
   .btn {
     font-size: 21px;
@@ -101,7 +108,8 @@ body {
 .resource-box {
     border-radius: 18px;
     border: 2px solid;
-    padding: 20px; 
+    padding: 20px;
+    background: white;
 }
 
 
