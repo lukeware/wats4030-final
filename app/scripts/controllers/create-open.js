@@ -8,7 +8,7 @@
  * Controller of the workspaceApp
  */
 angular.module('workspaceApp')
-  .controller('CreateCtrl', function () {
+  .controller('CreateCtrl', function ($scope) {
     this.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
