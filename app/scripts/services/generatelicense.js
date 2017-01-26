@@ -1,21 +1,14 @@
 'use strict';
 
-/**
- * @ngdoc service
- * @name workspaceApp.generateLicense
- * @description
- * # generateLicense
- * Factory in the workspaceApp.
- */
 angular.module('workspaceApp')
-  .factory('generateLicense', function ($resource) {
+  .factory('standard', function ($resource) {
 
     // CC Standard API here
-    return $resource('http://api.creativecommons.org/rest/1.5/license/:type/issue', {}, {
-      save: {
-        method: 'POST',
+    return $resource('http://creativecommons.org/choose/xhr_api?:query', {}, {
+      find: {
+        method: 'GET',
         params: {
-          type: "standard"
+          query: "field_commercial=y&field_derivatives=sa&field_jurisdiction=&field_format=&field_worktitle=&field_attribute_to_name=&version=&field_attribute_to_url=&field_sourceurl=&field_morepermissionsurl=&lang="
         },
         isArray: false
       }
