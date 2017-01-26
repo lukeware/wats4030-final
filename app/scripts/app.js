@@ -41,6 +41,11 @@ angular
         controller: 'CreateCtrl',
         controllerAs: 'create-open'
       })
+      .when('/imagesearch', {
+        templateUrl: 'views/imagesearch.html',
+        controller: 'ImagesearchCtrl',
+        controllerAs: 'imagesearch'
+      })
       .otherwise({
         redirectTo: '/'
       });
