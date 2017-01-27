@@ -43,8 +43,23 @@ angular
       })
       .when('/imagesearch', {
         templateUrl: 'views/imagesearch.html',
-        controller: 'ImagesearchCtrl',
+        controller: 'FlickrController',
         controllerAs: 'imagesearch'
+      })
+      .when('/flickrsearch', {
+        templateUrl: 'views/flickrsearch.html',
+        controller: 'FlickrsearchCtrl',
+        controllerAs: 'flickrsearch'
+      })
+      .when('/commonssearch', {
+        templateUrl: 'views/commonssearch.html',
+        controller: 'CommonssearchCtrl',
+        controllerAs: 'commonssearch'
+      })
+      .when('/openimages', {
+        templateUrl: 'views/openimages.html',
+        controller: 'OpenimagesCtrl',
+        controllerAs: 'openimages'
       })
       .otherwise({
         redirectTo: '/'

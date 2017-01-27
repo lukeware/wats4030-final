@@ -1,11 +1,5 @@
-<h1>Search Images with Flickr API</h1>
-  <article class="col-md-push-1 col-md-11">
+<h4>Find Creative Commons Images on Flickr</h4>
     <div class="app-container">
-      <fieldset class="app-fieldset">
-        <legend class="app-legend">
-          AngularJS Version
-        </legend>
-
         <form name="form" class="validate-form">
           <input id="searchCriteria"
                  ng-model="searchCriteria.tags"
@@ -13,17 +7,17 @@
                  name=" tags"
                  type="text"
                  title="required input"
-                 placeholder="Enter key words (tags) separated by a comma."
+                 placeholder="Enter search terms here"
                  required />
           <br />
-          Search Mode:
+          Creative Commons License
           <input type="radio" name="SearchMode" value="any" />Any Tags
           <input type="radio" name="SearchMode" value="all" checked />All Tags
           <br />
-          <input type="button" class="btn btn-default" ng-click="resetForm(form);" value="Reset" />
-          <button type="submit" class="btn btn-primary" ng-click="search(searchCriteria);document.getElementsByName('tags').focus();">
-            Search Flicker
+                    <button type="submit" class="btn btn-primary" ng-click="search(searchCriteria);document.getElementsByName('tags').focus();">
+            Search Flickr
           </button>
+          <input type="button" class="btn btn-default" ng-click="resetForm(form);" value="Reset" />
         </form>
       </fieldset>
 
@@ -38,3 +32,4 @@
         <figcaption class="added-cap">{{i.title}}</figcaption>
       </figure>
     </div>
+</section>
