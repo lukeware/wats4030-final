@@ -1,4 +1,7 @@
-<h4>Find Creative Commons Images on Flickr</h4>
+<h4>Find Public Domain Commons Images on Flickr</h4>
+<p>
+  Flickr has launched a new project, <a href="https://www.flickr.com/commons/">Flickr Commons</a>, whichs aims to catalogue the worlds images under a completely open and free public domain repository.
+</p>
     <div class="app-container">
         <form name="form" class="validate-form">
           <input id="searchCriteria"
@@ -10,12 +13,12 @@
                  placeholder="Enter search terms here"
                  required />
           <br />
-          Creative Commons License
-          <input type="radio" name="SearchMode" value="any" />Any Tags
-          <input type="radio" name="SearchMode" value="all" checked />All Tags
+          Search Mode
+          <input type="radio" name="SearchMode" value="any" />Any Word
+          <input type="radio" name="SearchMode" value="all" checked />All Words
           <br />
                     <button type="submit" class="btn btn-primary" ng-click="search(searchCriteria);document.getElementsByName('tags').focus();">
-            Search Flickr
+            Search Flickr Commons
           </button>
           <input type="button" class="btn btn-default" ng-click="resetForm(form);" value="Reset" />
         </form>
